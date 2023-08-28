@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-center text-5xl font-semibold">AI Universe Hub</h1>
+    <div class="text-center mt-8">
+        <button is="sort-by-date" class="btn btn-secondary">Sort By Date</button>
+    </div>
+    <!-- toggle spinner -->
+    <div id="toggle" class="text-center hidden mt-4">
+        <span class="loading loading-spinner text-success"></span>
+    </div>
+    <!-- card section -->
+    <div id="card-container" class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+    </div>
+    <!-- see more button -->
+    <div id="see-more-btn" class="hidden text-center mt-4">
+        <button onclick="handleSeeMore()" class="btn btn-secondary">See More</button>
+    </div>
+    <!-- modal section -->
+    <div>
+        <dialog id="my_modal_3" class="modal">
+            <form method="dialog" class="modal-box">
+                <div id="tools-details">
+
+                </div>
+            </form>
+        </dialog>
+    </div>
+    <script src="./js/ai-hub.js"></script>
+</body>
+
+</html>
